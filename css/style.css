@@ -58,6 +58,84 @@ nav li a:hover:not(.active) {
   background-color: #111;
 }
 
+#light1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: red;
+  animation-name: switch;
+  animation-duration: 2s;
+  display: inline-block;
+  margin: 20px;
+}
+
+#light2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: red;
+  animation-name: switch;
+  animation-duration: 4s;
+  display: inline-block;
+  margin: 20px;
+}
+
+#light3 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: red;
+  animation-name: switch;
+  animation-duration: 6s;
+  display: inline-block;
+  margin: 20px;
+}
+
+#light4 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: red;
+  animation-name: switch;
+  animation-duration: 8s;
+  display: inline-block;
+  margin: 20px;
+}
+
+#light5 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: red;
+  animation-name: switch;
+  animation-duration: 10s;
+  display: inline-block;
+  margin: 20px;
+}
+
+#go {
+  animation-name: engage;
+  animation-duration: 12s;
+  display: inline-block;
+  margin: 20px;
+  font-size: 50px;
+}
+
+
+@keyframes switch {
+  from {background-color: inherit;}
+  to {background-color: white;}
+}
+
+@keyframes engage {
+  0% {opacity: 0}
+  100% {opacity: 0}
+}
+
+#countdown {
+  margin-bottom: 20px
+}
+
 .active {
   background-color: #4CAF50;
 }
@@ -88,7 +166,7 @@ nav li a:hover:not(.active) {
   background-color: #dee0df;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1440px) {
   .flex-container {
     flex-wrap: wrap;
   }
@@ -97,12 +175,22 @@ nav li a:hover:not(.active) {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1440px) {
   nav li {
     float: none;
   }
   .flex-container {
     flex-direction: column;
+  }
+  .flex-container > div {
+    width: 80%;
+  }
+  #countdown {
+    display:none;
+  }
+  #form {
+    width: 50%;
+    margin: auto;
   }
 }
 
