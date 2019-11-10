@@ -24,7 +24,7 @@ h1{
 }
 
 p{
-  font-size: 15px;
+  font-size: 20px;
   line-height: 1;
   padding: 10px;
   text-align: center;
@@ -56,6 +56,11 @@ nav li a {
 
 nav li a:hover:not(.active) {
   background-color: #111;
+}
+
+footer p {
+  font-size: 10px;
+  text-align: center;
 }
 
 #light1 {
@@ -151,10 +156,6 @@ nav li a:hover:not(.active) {
   width: 50%;
 }
 
-.intro {
-
-}
-
 .flex-container {
   display: flex;
   justify-content: center;
@@ -184,6 +185,7 @@ nav li a:hover:not(.active) {
   }
   .flex-container > div {
     width: 80%;
+    margin-left: 7%;
   }
   #countdown {
     display:none;
